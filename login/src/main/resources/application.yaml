@@ -1,0 +1,22 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: login
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=pallavolo
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: false
+
+logging:
+  level:
+    org.springframework: INFO
+    com.example: INFO
